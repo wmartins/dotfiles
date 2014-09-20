@@ -33,6 +33,7 @@ set hlsearch " highlight search matches
 set incsearch " highlight searches as yout type
 set ignorecase " ignore case on searching
 set ruler " show info in bottom
+set showcmd " show commands in ruler
 set showmatch
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
