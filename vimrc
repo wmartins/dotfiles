@@ -43,5 +43,6 @@ set showmatch
 set autoindent
 set smartindent
 set tabstop=4
+set sw=4
 set expandtab
 set shiftround
