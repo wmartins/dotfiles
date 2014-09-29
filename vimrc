@@ -11,6 +11,7 @@ set nocompatible " remove Vi compatibility
 filetype plugin indent on " detect filetypes
 
 autocmd FileType make setlocal noexpandtab " use tabs to indent Makefile
+autocmd FileType ruby setlocal ts=2 sw=2 " use two spaces to indent ruby code
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Themes and Colors                                                           "
