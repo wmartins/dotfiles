@@ -3,6 +3,5 @@
 DIR=~/dotfiles
 
 rm ~/.vim
-rm ~/.vimrc
-ln -s $DIR/vim ~/.vim
-ln -s $DIR/vimrc ~/.vimrc
+ln -fs $DIR/vim ~/.vim
+ln -fs $DIR/vimrc ~/.vimrc
