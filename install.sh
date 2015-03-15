@@ -2,6 +2,14 @@
 
 DIR=~/dotfiles
 
-rm ~/.vim
-ln -fs $DIR/vim ~/.vim
-ln -fs $DIR/vimrc ~/.vimrc
+install_vim() {
+    rm ~/.vim
+    ln -fs $DIR/vim ~/.vim
+    ln -fs $DIR/vimrc ~/.vimrc
+}
+
+install() {
+    install_vim
+}
+
+install
