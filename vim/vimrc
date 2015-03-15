@@ -18,6 +18,7 @@ Plugin 'gmarik/Vundle.vim'
 Plugin 'othree/html5.vim'
 Plugin 'mattn/emmet-vim'
 Plugin 'bling/vim-airline'
+Plugin 'editorconfig/editorconfig-vim'
 
 call vundle#end()
 
