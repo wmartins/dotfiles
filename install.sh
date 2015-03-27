@@ -3,7 +3,6 @@
 DIR=~/dotfiles
 
 install_zsh() {
-    rm ~/.zsh
     ln -fs $DIR/zsh/zshrc ~/.zshrc
 }
 
