@@ -20,6 +20,8 @@ Plugin 'mattn/emmet-vim'
 Plugin 'bling/vim-airline'
 Plugin 'editorconfig/editorconfig-vim'
 Plugin 'scrooloose/nerdtree'
+Plugin 'groenewege/vim-less'
+Plugin 'kien/ctrlp.vim'
 
 call vundle#end()
 
