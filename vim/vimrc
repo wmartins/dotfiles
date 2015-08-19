@@ -42,7 +42,7 @@ au BufRead,BufNewFile *.pddl setfiletype lisp
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 set t_Co=256 " use 256 colors
-colorscheme jellybeans
+colorscheme Tomorrow-Night-Bright
 syntax enable " enable syntax highlight
 set laststatus=2
 
