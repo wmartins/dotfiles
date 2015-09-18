@@ -24,6 +24,7 @@ Plugin 'groenewege/vim-less'
 Plugin 'kien/ctrlp.vim'
 Plugin 'nanotech/jellybeans.vim'
 Plugin 'Yggdroot/indentLine'
+Plugin 'chriskempson/vim-tomorrow-theme'
 
 call vundle#end()
 

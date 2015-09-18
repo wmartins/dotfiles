@@ -7,7 +7,7 @@ install_zsh() {
 }
 
 install_vim() {
-    rm ~/.vim
+    rm ~/.vim -f
     ln -fs $DIR/vim ~/.vim
     ln -fs $DIR/vimrc ~/.vimrc
 }
