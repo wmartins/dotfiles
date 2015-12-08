@@ -25,7 +25,7 @@ Plugin 'bling/vim-airline'
 Plugin 'jiangmiao/auto-pairs'
 Plugin 'tpope/vim-fugitive'
 Plugin 'airblade/vim-gitgutter'
-Plugin 'nanotech/jellybeans.vim'
+Plugin 'chriskempson/base16-vim'
 
 call vundle#end()
 
@@ -44,7 +44,9 @@ au BufRead,BufNewFile *.pddl setfiletype lisp
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 set t_Co=256 " use 256 colors
-colorscheme jellybeans
+set background=dark
+let base16colorspace=256
+colorscheme base16-default
 syntax enable " enable syntax highlight
 set laststatus=2
 
