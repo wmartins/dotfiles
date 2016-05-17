@@ -55,6 +55,7 @@ set laststatus=2
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 set number " show line numbers
+set relativenumber " show relative line numbers
 set cul " highlight current line
 set hlsearch " highlight search matches
 set incsearch " highlight searches as yout type
