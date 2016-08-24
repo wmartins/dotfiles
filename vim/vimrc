@@ -46,7 +46,7 @@ au BufRead,BufNewFile *.pddl setfiletype lisp
 set t_Co=256 " use 256 colors
 set background=dark
 let base16colorspace=256
-colorscheme base16-default
+colorscheme base16-default-dark
 syntax enable " enable syntax highlight
 set laststatus=2
 
