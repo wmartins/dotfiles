@@ -3,7 +3,7 @@
 DIR=~/dotfiles
 
 install_zsh() {
-    ln -fs $DIR/zsh/zshrc ~/.zshrc
+    ln -fs ${DIR}/zsh/zshrc ~/.zshrc
 }
 
 install_base16_shell() {
@@ -13,8 +13,8 @@ install_base16_shell() {
 
 install_vim() {
     rm ~/.vim -f
-    ln -fs $DIR/vim ~/.vim
-    ln -fs $DIR/vimrc ~/.vimrc
+    ln -fs ${DIR}/vim ~/.vim
+    ln -fs ${DIR}/vimrc ~/.vimrc
 }
 
 install() {
