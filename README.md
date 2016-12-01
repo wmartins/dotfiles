@@ -4,5 +4,5 @@
 
 - Clone the repo
 - Run `git submodule init`
-- Run `git submodule update` to download Vundle
-- Open `vim` and type `:VundleInstall` to install de dependencies
+- Run `git submodule update` to download submodules
+- Run `install.sh` script

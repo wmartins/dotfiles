@@ -17,10 +17,15 @@ install_vim() {
     ln -fs ${DIR}/vimrc ~/.vimrc
 }
 
+install_vim_plugins() {
+    vim +PluginInstall +qall
+}
+
 install() {
     install_base16_shell
     install_vim
     install_zsh
+    install_vim_plugins
 }
 
 install
