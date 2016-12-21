@@ -27,6 +27,7 @@ Plugin 'Raimondi/delimitMate'
 Plugin 'tpope/vim-fugitive'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'chriskempson/base16-vim'
+Plugin 'fatih/vim-go'
 
 call vundle#end()
 
@@ -36,9 +37,11 @@ call vundle#end()
 
 filetype plugin indent on " detect filetypes
 
-autocmd FileType make setlocal noexpandtab " use tabs to indent Makefile
+autocmd FileType make.go setlocal noexpandtab " use tabs to indent Makefile
 autocmd FileType ruby setlocal ts=2 sw=2 " use two spaces to indent ruby code
 au BufRead,BufNewFile *.pddl setfiletype lisp
+
+let g:go_template_autocreate=0
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Themes and Colors                                                           "
