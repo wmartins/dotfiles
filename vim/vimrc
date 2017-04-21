@@ -28,8 +28,11 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'chriskempson/base16-vim'
 Plugin 'fatih/vim-go'
+Plugin 'mxw/vim-jsx'
 
 call vundle#end()
+
+let g:jsx_ext_required = 0 " enable jsx extension to js files
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Events                                                                       "
@@ -38,14 +41,14 @@ call vundle#end()
 filetype plugin indent on " detect filetypes
 
 autocmd FileType make,go setlocal noexpandtab " use tabs to indent Makefile
-autocmd FileType ruby,yaml setlocal ts=2 sw=2 " use two spaces to indent ruby code
+autocmd FileType ruby,yaml setlocal ts=2 sw=2 " use two spaces to ruby code
 au BufRead,BufNewFile *.pddl setfiletype lisp
 
 let g:go_template_autocreate=0
 
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Themes and Colors                                                           "
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Themes and Colors                                                            "
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 set t_Co=256 " use 256 colors
 set background=dark
@@ -54,9 +57,9 @@ colorscheme base16-default-dark
 syntax enable " enable syntax highlight
 set laststatus=2
 
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Vim UI                                                                      "
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Vim UI                                                                       "
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 set number " show line numbers
 set relativenumber " show relative line numbers
@@ -68,13 +71,15 @@ set ruler " show info in bottom
 set showcmd " show commands in ruler
 set showmatch
 
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Text Formatting and Layout                                                  "
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Text Formatting and Layout                                                   "
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 set autoindent
 set smartindent
 set tabstop=4
-set sw=4
+set shiftwidth=4
 set expandtab
 set shiftround
+set textwidth=80
+set colorcolumn=+1
