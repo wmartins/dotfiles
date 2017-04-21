@@ -28,6 +28,7 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'chriskempson/base16-vim'
 Plugin 'fatih/vim-go'
+Plugin 'pangloss/vim-javascript'
 Plugin 'mxw/vim-jsx'
 
 call vundle#end()
@@ -56,6 +57,11 @@ let base16colorspace=256
 colorscheme base16-default-dark
 syntax enable " enable syntax highlight
 set laststatus=2
+
+hi Tag        ctermfg=04
+hi xmlTag     ctermfg=04
+hi xmlTagName ctermfg=04
+hi xmlEndTag  ctermfg=04
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Vim UI                                                                       "
