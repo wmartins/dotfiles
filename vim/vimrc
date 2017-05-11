@@ -34,6 +34,7 @@ Plugin 'mxw/vim-jsx'
 call vundle#end()
 
 let g:jsx_ext_required = 0 " enable jsx extension to js files
+let g:go_template_autocreate=0
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Events                                                                       "
@@ -43,9 +44,8 @@ filetype plugin indent on " detect filetypes
 
 autocmd FileType make,go setlocal noexpandtab " use tabs to indent Makefile
 autocmd FileType ruby,yaml setlocal ts=2 sw=2 " use two spaces to ruby code
+autocmd FileType gitcommit setlocal spell textwidth=72 " 72 cols to git commit
 au BufRead,BufNewFile *.pddl setfiletype lisp
-
-let g:go_template_autocreate=0
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Themes and Colors                                                            "
