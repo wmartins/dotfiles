@@ -5,5 +5,6 @@ source ~/dotfiles/vim/modules/indentations.vim
 source ~/dotfiles/vim/modules/javascript-settings.vim
 source ~/dotfiles/vim/modules/plugins.vim
 source ~/dotfiles/vim/modules/search.vim
+source ~/dotfiles/vim/modules/tmuxline-settings.vim
 source ~/dotfiles/vim/modules/ui.vim
 source ~/dotfiles/vim/modules/visuals.vim
