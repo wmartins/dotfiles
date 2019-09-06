@@ -1,6 +1,6 @@
 export EDITOR=vim
 export GOPATH=${HOME}/workspace/go
-export LANG=en_US
+export LC_ALL=en_US.UTF-8
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
