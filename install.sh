@@ -12,7 +12,7 @@ install_tmux() {
 }
 
 install_vim() {
-  rm ~/.vim -f
+  rm -f ~/.vim
   ln -fs ${DIR}/vim ~/.vim
   ln -fs ${DIR}/vimrc ~/.vimrc
 }
